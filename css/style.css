@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background:no-repeat center url("../images/pexels-francesco-ungaro-2835436.jpg");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+.main .box{
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+.main .box .search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .box .search-box input{
+    padding: 10px;
+    width: 80%;
+    background-color: transparent;
+    box-shadow: inset 3px 5px 10px 1px #0000007a;
+    border-radius: 15px;
+    border: none;
+    margin-right: 7px;
+    color:white;
+    font-weight: bold;
+}
+.main .box .search-box input:focus{
+    outline: none;
+}
+.main .box .search-box button{
+    background-color: transparent;
+    padding-block: 5px;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset 3px 5px 10px 1px #0000007a;
+}
+.main .box .search-box button img{
+    width: 30%;
+}
+.main .weather{
+    text-align: center;
+    height: 0;
+}
+.main .weather .icon{
+    opacity: 0;
+}
+.main .weather h2{
+    margin: 20px;
+}
+.main .details{
+    display: flex;
+    align-items: center;
+    margin:10px auto;
+    justify-content: space-around;
+    width: 90%;
+    text-align: center;
+}
+.main .weather .details .col,
+.main .weather .details .col0{
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    margin: 8px;
+    opacity: 0;
+}
+.main .weather .details img{
+    width: 30%;
+    height: 30%;
+}
+.main .weather .details p{
+    padding: 3px;
+}
+.error{
+    font-size: 13px;
+    margin: 6px;
+    color: rgb(245, 15, 15);
+    font-weight: bolder;
+    display: none;
+}
+.error span{
+    font-weight: bold;
+    color: red;
+    margin: 3PX;
+}
